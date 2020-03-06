@@ -36,7 +36,7 @@ public class Cifrado {
             for(int j=0; j<abecedario1.length();j++){
                 if(cadenaMayus.charAt(i)==abecedario1.charAt(j)){
                     if(j + desplazamiento >= abecedario1.length()){
-                        cadenaCifrada += abecedario1.charAt((j+desplazamiento)%abecedario1.length());
+                        cadenaCifrada += abecedario1.charAt((j+desplazamiento)%abecedario1.length()); // 1030 % 25 = 5
                     }
                     else{
                         cadenaCifrada += abecedario1.charAt(j+desplazamiento);
