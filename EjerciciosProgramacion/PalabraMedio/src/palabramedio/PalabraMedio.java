@@ -23,7 +23,11 @@ public class PalabraMedio {
         
         String[] cadenaSeparada =  cadena.split(" ");
         
-        if(cadenaSeparada[0].compareTo(cadenaSeparada[2])<0 && cadenaSeparada[0].compareTo(cadenaSeparada[1])<0 && 
+        if(cadenaSeparada[0].compareTo(cadenaSeparada[1])>0 && cadenaSeparada[1].compareTo(cadenaSeparada[2])<0 && 
+           cadenaSeparada[2].compareTo(cadenaSeparada[0])<0){
+            System.out.println("La palabra del medio es correcta");
+        }  
+        else if(cadenaSeparada[0].compareTo(cadenaSeparada[2])<0 && cadenaSeparada[0].compareTo(cadenaSeparada[1])<0 && 
            cadenaSeparada[1].compareTo(cadenaSeparada[2])<0){    
             System.out.println("La palabra del medio es correcta");
         } else{
